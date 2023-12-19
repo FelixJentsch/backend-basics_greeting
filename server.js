@@ -1,3 +1,6 @@
-import { createServer } from "node:http";
+import { createServer, request } from "node:http";
 
-// export const server = …
+const server = createServer((request, response) => {
+  response.end("Hello, Felix");
+});
+export { server };
